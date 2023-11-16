@@ -1,31 +1,31 @@
 /* Hämtar div textbox med hjälp av DOM-funktion getElementsByClassName, där classname är textbox */
 function getDiv() {
-    let textbox = document.getElementsByClassName(".textBox").innerHTML;
+    let textbox = document.getElementsByClassName("textBox").innerHTML;
 }
 /* Hämtar input med hjälp av DOM-funktion getElementById, där id är color */
 function getColor() {
-    let color = document.getElementById("#color").innerHTML;
+    let color = document.getElementById("color").innerHTML;
 }
 /* Hämtar textfält med hjälp av DOM-funktion getElementByClassName, där className är textfield*/
 function getTextfield() {
-    let textfield = document.getElementByClassName(".textField").innerHTML;
+    let textfield = document.getElementByClassName("textField").innerHTML;
 }
 /* Hämtar content med hjälp av DOM-funktion getElementById, där id är content*/
 function getContent() {
-    let content = document.getElementById("#content").innerHTML;
+    let content = document.getElementById("content").innerHTML;
 }
 eventLyssnare();
 /* Hämtar textfält med hjälp av DOM-funktion getElementByClassName, där className är textfield*/
 function getTextfield1() {
-    let textfield1 = document.getElementByClassName(".textField").innerHTML;
+    let textfield1 = document.getElementByClassName("textField").innerHTML;
 }
 /* Hämtar divStyle med hjälp av DOM-funktion getElementById, där id är divStyle*/
 function getDivStyle() {
-    let divStyle = document.getElementById("#divStyle").innerHTML;
+    let divStyle = document.getElementById("divStyle").innerHTML;
 }
 /* Hämtar checkbox med hjälp av DOM-funktion getElementByClassName, där className är checkbox*/
 function getCheckbox() {
-    let checkbox = document.getElementByClassName(".checkBox").innerHTML;
+    let checkbox = document.getElementByClassName("checkBox").innerHTML;
 }
 /* Hämtar knappen med hjälp av DOM-funktion getElementByTagName, där tagName är delete*/
 function getButton() {
