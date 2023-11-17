@@ -1,11 +1,11 @@
 /* Hämtar div textbox med hjälp av getElementsByClassName, där classname är textbox */
-const textBox = document.getElementsByClassName("textBox");
+const textBox = document.getElementsByClassName("container");
 
 /* Hämtar input med hjälp av getElementById, där id är color */
 const color = document.getElementById("color");
 
 /* Hämtar textfält med hjälp getElementByClassName, där className är textfield*/
-const textfield = document.getElementsByClassName("textField");
+const textfield = document.getElementsByClassName("textfieldOne");
 
 /* Hämtar content med hjälp av getElementById, där id är content*/
 const content = document.getElementById("content");
@@ -13,8 +13,9 @@ const content = document.getElementById("content");
 
 
 /* eventLyssnare(); */
+
 /* Hämtar textfält med hjälp av querySelector, där className är textfield*/
-const textfield1 = document.querySelector(".textField");
+const textfield1 = document.querySelector(".textfieldTwo");
 
 /* Hämtar divStyle med hjälp av getElementById, där id är divStyle*/
 const divStyle = document.getElementById("divStyle");
