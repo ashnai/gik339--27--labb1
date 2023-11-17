@@ -6,17 +6,18 @@
     <title>Labb 1 - Grupp 27</title>
 </head>
 <body>
-    <h2>Labb 1 - Grupp 27</h2>
-    <div class="textBox"> <!-- boxen som håller allt -->
-        <label class ="input_element1" for="color">Färg:</label> <!-- en label för färg -->
-        <input type="text" id="color" name="color" class="textField"> <!-- en input med attribut text. Name och id är color och klassen är textfield. -->
+    <h2 class="textTitle">Labb 1 - Grupp 27</h2>
+    <div class="container"> <!-- boxen som håller allt -->
+        <input class ="textfieldOne" id="color" type="text" name="color">Färg: 
+        <!-- en input-klass med attribut text. Name och id är color och klassen är textfield. -->
 
-        <label class="input_element2" for="color">Content:</label> <!-- en label för färg -->
-        <input type="text" id="content" name="content" class="textField"> <!-- en input med attribut text. Name och id är content och klassen är textfield. -->
+        <input class="textfieldTwo" id="content" type="text" name="content">Content:
+        <!-- en input-klass med attribut text. Name och id är content och klassen är textfield. -->
 
-        <label class="input_element3" for="color">Checkbox:</label> <!-- en label för färg -->
-        <input type="text" id="divStyle" name="divStyle" class="checkBox"> <!-- en input med attribut text. Name och id är divStyle och klassen är checkbox. -->
-        <button class = "delete" id="delete" name = "delete">Ta bort</button>
+        <input class="checkbox" id="divStyle" type="checkbox" name="divStyle">Checkbox: 
+        <!-- en input-klass med attribut checkbox. Name och id är divStyle och klassen är checkbox -->
+     
+        <button class = "deleteButton" id="delete" name = "delete">Ta bort</button>
     </div>
     <script defer src="script-body.js"></script> <!-- scriptfilen som hämtas från en extern fil. -->
 </body>

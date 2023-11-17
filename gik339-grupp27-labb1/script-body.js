@@ -7,8 +7,10 @@ const color = document.getElementById("color");
 /* Hämtar textfält med hjälp getElementByClassName, där className är textfield*/
 const textfield = document.getElementsByClassName("textField");
 
-/* Hämtar content med hjälp av DOM-funktion getElementById, där id är content*/
+/* Hämtar content med hjälp av getElementById, där id är content*/
 const content = document.getElementById("content");
+
+
 
 /* eventLyssnare(); */
 /* Hämtar textfält med hjälp av querySelector, där className är textfield*/
