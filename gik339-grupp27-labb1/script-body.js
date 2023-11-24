@@ -1,65 +1,65 @@
-/* Hämtar div textbox med hjälp av getElementsByClassName, där classname är textbox */
-const textBox = document.getElementsByClassName("container");
+// Hämtar alla input-element med klassen 'textfield'
+const inputFields = document.querySelectorAll('.textfield');
 
-/* Hämtar input med hjälp av getElementById, där id är color */
-const color = document.getElementById("color");
+// Hämtar elementet där nya element ska visas
+const dynamicDisplay = document.getElementById('dynamicDisplay');
 
-/* Hämtar textfält med hjälp getElementByClassName, där className är textfield*/
-const textfield = document.getElementsByClassName("textfieldOne");
+// Hämtar input-fält för färg
+const colorField = document.getElementById('color');
 
-/* Hämtar content med hjälp av getElementById, där id är content*/
-const content = document.getElementById("content");
+// Hämtar input-fält för text
+const contentField = document.getElementById('content');
+
+// Hämtar checkbox-elementet
+const divStyleCheckbox = document.getElementById('divStyle');
 
 
+// Kollar i consol loggen vad vi hämtar
+console.log(inputFields, dynamicDisplay, colorField, contentField,divStyleCheckbox)
 
 
-/* eventLyssnare(); */
+// Funktionen som hanterar eventet
+function handleInputEvent(e) {
+  // Skriver ut vilket element som genererade eventet
+  console.log('Event genererat av:', e.target);
+  // Hämtar name-attributet från elementet som genererade eventet
+  const fieldName = e.target.name;
+  // Kontrollerar om det är 'content'-fältet
+  if (fieldName === 'content') {
+      // Hämtar värdet från 'content'-fältet
+      const contentValue = e.target.value;
+      // Skriver ut värdet i 'content'-fältet till div-elementet
+      dynamicDisplay.innerHTML = contentValue;
+  }
+}
 
-/* Hämtar textfält med hjälp av querySelector, där className är textfield*/
-const textfield1 = document.querySelector(".textfieldTwo");
+// Lägger till eventlyssnare till alla input-fält
+inputFields.forEach(field => field.addEventListener('input', handleInputEvent));
 
-/* Hämtar divStyle med hjälp av getElementById, där id är divStyle*/
-const divStyle = document.getElementById("divStyle");
 
-/* Hämtar checkbox med hjälp av getElementByClassName, där className är checkbox*/
-const checkbox = document.getElementsByClassName("checkBox");
+divStyleCheckbox.addEventListener('change', function() {
+  if (this.checked) {
+    // Sätter bakgrundsfärgen på dynamicDisplay baserat på värdet i colorField
+    dynamicDisplay.style.backgroundColor = colorField.value;
+    // Sätter innehållet i dynamicDisplay baserat på värdet i contentField
+    dynamicDisplay.innerHTML = contentField.value;
+  } else {
+    // Återställer dynamicDisplay till standardinställningar när checkboxen inte är ikryssad
+    dynamicDisplay.style.backgroundColor = ''; // Eller sätt en standardfärg
+    dynamicDisplay.innerHTML = ''; // Eller sätt standardtext
+  }
+});
 
-/* Hämtar knappen med hjälp av getElementByTagName, där tagName är delete*/
-const button = document.querySelector("#delete");
 
-/* Skapar en funktion (eventlyssnare) som när den triggas 
-ska avsändaren (target) skrivas ut till konsolen. Om avsändaren (target) 
-är inputfältet content, ska dess värde skrivas ut till div-elementet */
+// Hämtar "Ta bort"-knappen
+const deleteButton = document.querySelector("#delete");
+// Lägger till en eventlyssnare på "Ta bort"-knappen
 
-/* getTextfield1.addEventListener'click', () => {
-    content = document.getElementsByName("content");
-    content.for((content) => {
-        if (content.checked) {
-            output.innerText = `You selected: ${content.value}`;
-        }
-    }); */
-
-/* function eventLyssnare(event) {*/
-    /* alert("Target")
-    content.addEventListener("click", eventLyssnare); */
-    /* let e = event || window.event; */
-/* Skriver ut till konsolen vilket inputfält som genererade eventet (target) */
-   /*  console.log("Event triggered by: " + e.content.id);
- */
-/* Tar reda på inputfältets name attribut*/
-   /*  let fieldName = e.target.name;
- */
-    /* Om name-attributet är "content" */
-  /*   if (fieldName == "content") {
-        let outputDiv = document.getElementById("output"); */
-
-        /* Skriver ut värdet i inputfältet till div-elementet */
-       /*  outputDiv.innerHTML = "Input value: " + e.content.value;
-    }
-}  */
-
-/* Hämtar input-elementet */
-/* const contentInput = document.getElementById("content"); */
-
-/* Lägger till en eventlyssnare till input-elementet */
-/* contentInput.addEventListener("input", handleInput); */
+deleteButton.addEventListener('click', function() {
+    // Hämtar dynamicDisplay-elementet
+    const dynamicDisplay = document.getElementById('dynamicDisplay');
+    console.log(deleteButton)
+    // Rensar allt innehåll i dynamicDisplay när knappen klickas
+    dynamicDisplay.style.backgroundColor = '';
+    dynamicDisplay.innerHTML = '';
+});

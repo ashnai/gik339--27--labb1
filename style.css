@@ -1,0 +1,153 @@
+body {
+    background-color: #082132;
+}
+
+.textTitle {
+    justify-content: center;
+    align-items: center;  
+    display: flex;
+    margin-top: 3rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #f4f7f9;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    position: relative;
+    left: 22rem; 
+    display: flex;   
+    flex-wrap: wrap;  
+    flex-basis: 100%; 
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    background-color: #e7edf2;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 30rem;
+    margin-left: 2rem;
+    padding-top: 2rem;
+    border: 2px #e7edf2;
+    border-radius: 0.3rem;
+    letter-spacing: .1rem;
+    gap: 0.5rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem #2b2b2b;
+}
+
+#color {
+    display: flex;
+    width: 26rem;
+    height: 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1.2rem;
+    padding-left: 0.4rem;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+}
+
+#content {
+    justify-content: center;
+    align-items: center;  
+    display: flex;
+    width: 26rem;
+    height: 1rem;
+    margin-top: -1.2rem;
+    margin-left: 8.4rem;
+    padding-left: 0.4rem;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+}
+
+.text1 {
+    margin-top: 0.8rem;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+   
+}
+
+.text2 {
+   padding-top: 1rem;
+    margin-top: 0.8rem;
+    margin-left: 4rem;
+    margin-right: 10rem;
+    margin-bottom: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+#divStyle {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+.checkbox {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    margin-right: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+
+}
+
+
+.check {
+    margin-top: 1rem;
+    margin-left: 4rem;
+    margin-right: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+
+}
+
+#delete {
+    margin-top: 0.8rem;
+    margin-left: 4rem;
+    margin-right: 22rem;
+    width: 5rem;
+    height: 1.8rem;
+    display: block;
+    align-items: left;
+    justify-content: left;
+    place-content: left;
+    border-radius: 0.5rem;
+    background-color: #c6d4e0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+#dynamicDisplay {
+  padding-top: 5px;
+  padding-left: 1rem;
+    margin-top: 1.5rem;
+    margin-left: 4rem;
+    margin-bottom: 5rem;
+    border: 0.01rem;
+    border-style: solid;
+    border-color: #082132;
+    border-radius: 2px;
+    width: 80%;
+    height: 2rem;
+    background-color: #f4f7f9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+
+@media screen and (min-width: 750px) {
+
+}
