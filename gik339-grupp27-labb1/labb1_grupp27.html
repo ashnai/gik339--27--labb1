@@ -4,23 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <title>Labb 1 - Grupp 27</title>
 </head>
 <body>
-    <h2 class="textTitle">Labb 1 - Grupp 27</h2>
+    <h2 class="textTitle">Test inför labb1</h2>
     <div class="container"> <!-- boxen som håller allt -->
-        <input class ="textfieldOne" id="color" type="text" name="color">Färg: 
+        
         <!-- en input-klass med attribut text. Name och id är color och klassen är textfield. -->
-
-        <input class="textfieldTwo" id="content" type="text" name="content">Content:
+        <label class="text1" for="color">Färg: </label>
+        <input type="text" id="color" name="color" class ="textfield">
+        
+        
         <!-- en input-klass med attribut text. Name och id är content och klassen är textfield. -->
-
-        <input class="checkbox" id="divStyle" type="checkbox" name="divStyle">Checkbox: 
+        <label class="text2" for="content">Text:</label>
+        <input type="text" id="content" name="content" class="textfield">
+        
         <!-- en input-klass med attribut checkbox. Name och id är divStyle och klassen är checkbox -->
+        <label class="check" for="divStyle">Checkbox:</label>
+        <input type="checkbox" id="divStyle" name="divStyle" class="checkbox">
      
-        <button class = "deleteButton" id="delete" name = "delete">Ta bort</button>
+        <button class ="deleteButton" id="delete" name = "button">Ta bort</button>
+        
+        <div id="dynamicDisplay"></div>
     </div>
-    <script defer src="script-body.js"></script> <!-- scriptfilen som hämtas från en extern fil. -->
+    <!-- <div id="output">test för att se den</div> -->
+    
+    
+    <script defer src="script.js"></script> <!-- scriptfilen som hämtas från en extern fil. -->
 </body>
 </html>
 
