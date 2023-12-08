@@ -28,8 +28,6 @@ function handleInputEvent(e) {
   if (fieldName === 'content') {
       // Hämtar värdet från 'content'-fältet
       const contentValue = e.target.value;
-      // Skriver ut värdet i 'content'-fältet till div-elementet
-      dynamicDisplay.innerHTML = contentValue;
   }
 }
 
